@@ -10,16 +10,21 @@ body {
 }
 
 @font-face {
-  font-family: "Protest Riot";
-  font-weight: 400;
-  src: url("assets/Norse-Bold.woff2") format("woff2");
+  font-family: "Norse";
+  src: url("./assets/Norse-Bold.woff2") format("woff2"), url("./assets/Norse-Bold.otf") format("otf");
 }
+img {
+  width: 7vw;
+  height: 14vh;
+}
+
 .left {
   width: 35vw;
   height: 100vh;
   background-image: url("./assets/plant.jpg");
   background-size: cover;
   position: relative;
+  color: white;
 }
 
 .right {
@@ -28,11 +33,16 @@ body {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 16vh;
   width: 35vw;
   position: absolute;
   top: 20vh;
   background-color: rgba(1, 1, 1, 0.4);
+  font-family: "Norse";
+  font-size: 10vh;
 }
 
 /*# sourceMappingURL=style.css.map */
