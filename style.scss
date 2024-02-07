@@ -1,0 +1,36 @@
+@mixin flexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    @include flexy;
+}
+*{
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: 'Protest Riot';
+    font-weight: 400;
+    src: url('assets/Norse-Bold.woff2') format('woff2');
+}
+
+.left{
+    width:35vw;
+    height:100vh;
+    background-image: url("./assets/plant.jpg");
+    background-size: cover;
+    position:relative;
+}
+.right{
+    width:65vw;
+    height:100vh;
+}
+.logo{
+    height:16vh;
+    width:35vw;
+    position: absolute;
+    top: 20vh;
+    background-color: rgba(1,1,1,0.4);
+}
