@@ -27,7 +27,7 @@ a {
   width: 35vw;
   height: 100vh;
   background-image: url("./assets/plant.jpg");
-  background-size: cover;
+  background-size: 35vw 100vh;
   position: relative;
   color: white;
 }
