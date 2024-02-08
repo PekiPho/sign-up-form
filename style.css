@@ -21,7 +21,6 @@ img {
 
 a {
   all: unset;
-  text-decoration: underline;
 }
 
 form {
@@ -96,12 +95,15 @@ button {
   font-size: large;
 }
 
-.up {
-  font-size: 28px;
-  font-weight: 500;
+.up, .already {
   padding-left: 4vw;
   padding-right: 16vw;
   width: 45vw;
+}
+
+.up {
+  font-size: 28px;
+  font-weight: 500;
 }
 
 .up:nth-child(3) {
@@ -131,6 +133,20 @@ form > p {
 
 .container-input:nth-child(2) {
   padding-right: 12vw;
+}
+
+.already {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.links {
+  text-decoration: underline;
+}
+
+.login {
+  color: #596D48;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

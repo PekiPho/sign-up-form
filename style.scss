@@ -26,7 +26,6 @@ img{
 }
 a{
     all:unset;
-    text-decoration: underline;
 }
 form{
     width:65vw;
@@ -91,11 +90,14 @@ button{
     text-align: center;
     font-size: large;
 }
+.up,.already{
+    
+    @include paddings;
+    width: 45vw;
+}
 .up{
     font-size: 28px;
     font-weight: 500;
-    @include paddings;
-    width: 45vw;
 }
 .up:nth-child(3){
     margin-top: 30px;
@@ -120,4 +122,15 @@ form>p{
 }
 .container-input:nth-child(2){
     padding-right: 12vw;
+}
+.already{
+    font-size: 18px;
+    padding-top: 20px;
+}
+.links{
+    text-decoration: underline;
+}
+.login{
+    color: #596D48;
+    font-weight: bold;
 }
