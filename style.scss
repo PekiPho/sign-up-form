@@ -135,3 +135,15 @@ form>p{
     color: #596D48;
     font-weight: bold;
 }
+
+.error{
+    border-color: #ff3333;
+}
+.correct{
+    border-color: #596D48;
+}
+
+input:focus{
+    border-color: #7676a7;
+    outline:none;
+}
