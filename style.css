@@ -35,6 +35,10 @@ a {
 .right {
   width: 65vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo {
@@ -56,6 +60,18 @@ a {
   bottom: 0;
   text-align: center;
   font-size: large;
+}
+
+.up {
+  font-size: 32px;
+  font-weight: 500;
+  padding-left: 4vw;
+  padding-right: 16vw;
+  width: 45vw;
+}
+
+.up:nth-child(3) {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
