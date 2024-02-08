@@ -18,6 +18,11 @@ img {
   height: 14vh;
 }
 
+a {
+  all: unset;
+  text-decoration: underline;
+}
+
 .left {
   width: 35vw;
   height: 100vh;
@@ -43,6 +48,14 @@ img {
   background-color: rgba(1, 1, 1, 0.4);
   font-family: "Norse";
   font-size: 10vh;
+}
+
+.footer {
+  width: 35vw;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: large;
 }
 
 /*# sourceMappingURL=style.css.map */
