@@ -2,6 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fffafa;
 }
 
 * {
@@ -21,6 +22,27 @@ img {
 a {
   all: unset;
   text-decoration: underline;
+}
+
+form {
+  width: 65vw;
+  height: 35vh;
+  background-color: white;
+  box-shadow: 0 2px 10px -4px black;
+}
+
+label {
+  color: #23272e;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+input {
+  width: 15vw;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #E5E7EB;
+  border-style: solid;
 }
 
 .left {
@@ -63,7 +85,7 @@ a {
 }
 
 .up {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   padding-left: 4vw;
   padding-right: 16vw;
@@ -72,6 +94,26 @@ a {
 
 .up:nth-child(3) {
   margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.container-input {
+  padding-left: 4vw;
+  padding-right: 2vw;
+}
+
+.container-input:nth-child(2) {
+  padding-right: 12vw;
 }
 
 /*# sourceMappingURL=style.css.map */
