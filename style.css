@@ -163,4 +163,9 @@ input:focus {
   outline: none;
 }
 
+.error2 {
+  color: #ff3333;
+  font-size: small;
+}
+
 /*# sourceMappingURL=style.css.map */

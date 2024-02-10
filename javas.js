@@ -1,5 +1,10 @@
 let inputs=document.querySelectorAll('input');
+let pass=document.querySelector('#password');
+let dpass=document.querySelector('.inputs.password');
 
+let para=document.createElement('p');
+para.classList.add('error2');
+para.textContent='* Passwords do not match';
 
 const patterns= {
     first_name: /^[a-z]{0,14}$/i,
@@ -13,7 +18,36 @@ const patterns= {
 
 inputs.forEach((input)=>{
     input.addEventListener('keyup',(e)=>{
-        validate(patterns[e.target.id],e.target);
+        if(e.target.id!=='cpassword')
+            validate(patterns[e.target.id],e.target);
+        else{
+            if(patterns[e.target.id].test(e.target.value))
+            {
+                if(e.target.value===pass.value)
+                {
+                    e.target.classList.add('correct');
+                    e.target.classList.remove('error');
+                    pass.classList.add('correct');
+                    pass.classList.remove('error');
+                    dpass.removeChild(para);
+                } 
+                else 
+                {
+                    e.target.classList.add('error');
+                    e.target.classList.remove('correct');
+                    pass.classList.add('error');
+                    pass.classList.remove('correct');
+                    dpass.appendChild(para);
+                }
+            }
+            else{
+                e.target.classList.add('error');
+                e.target.classList.remove('correct');
+                pass.classList.add('error');
+                pass.classList.remove('correct');
+                dpass.appendChild(para);
+            }
+        }
     });
 });
 
@@ -28,3 +62,5 @@ function validate(regex,input){
         input.classList.remove('correct');
     }
 }
+
+//e.target.value===pass.value
