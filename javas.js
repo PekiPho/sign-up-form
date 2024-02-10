@@ -63,4 +63,18 @@ function validate(regex,input){
     }
 }
 
+function btnclick(){
+    let i=0;
+    inputs.forEach((input)=>{
+        if(input.classList.contains('correct'))
+            i++;
+    });
+    if(i===6){
+        inputs.forEach((input)=>{
+            input.classList.remove('correct');
+            input.value="";
+        });
+    }
+}
+
 //e.target.value===pass.value
